@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+C:\Users\Cardozo\Desktop\CURSO_JAVA\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+551911788.index
+3426318423.index
+2232693414.index
+2338660954.index
+390919582.index
+1167275426.index
+415683599.index
+2155054191.index
+3521677663.index
+2026927425.index
+2122752110.index
+82759738.index
+319289063.index
+814037000.index
+3032936850.index
+1397350324.index
+2038972547.index

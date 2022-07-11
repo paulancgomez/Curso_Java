@@ -1,0 +1,46 @@
+La cola implementa FIFO (first in, first out), es decir, primero en entrar, primero en
+salir..
+
+EJEMPLO: las colas de un banco.
+---------------------------------------------------------------------------------
+IMPLEMENTACION
+
+Las colas se pueden implementar utilizando una estructura estática (arreglos), o una
+estructura dinámica (listas enlazadas, vectores, etc).
+
+------------------------------------------------------------------------------
+Operaciones:
+
+● add(e): Inserta el elemento e al final de la cola
+● poll(): Elimina el elemento del frente de la cola y lo retorna. Si la cola está vacía se
+produce un error
+● peek(): Retorna el elemento del frente de la cola. Si la cola está vacía se produce un
+error
+● isEmpty(): Retorna verdadero si la cola está vacía.
+● size(): Retorna la cantidad de elementos de la cola
+
+----------------------------------------------------------------------------------
+Implementación:
+
+● Se crea una colección llamada cola de tipo Queue
+	○ Queue: es una forma lineal especial, que sólo permite la eliminación en el
+	extremo frontal de la lista, mientras que el extremo posterior de la operación
+	de inserción de la lista
+
+● Con una implementación de lista enlazada (LinkedList):
+	○ clase LinkedList implementa la interfaz de cola, por lo que puede usar listas
+	enlazadas como una cola
+
+● Se define excepciones para las condiciones de error
+
+-------------------------------------------------------------------------------------
+EJEMPLO
+
+Definimos una cola del tipo integer.
+
+Agregamos datos a la cola con add().
+
+iteramos hasta que la cola está vacía. peek() nos muestra el
+elemento en la cola. Y con poll() sacamos el elemento de la cola.
+
+------------------------------------------------------------------------------------

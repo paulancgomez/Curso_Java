@@ -1,0 +1,2 @@
+Es importante tener un valor de retorno. No me sirve tener de salida solo un mensaje, puedo tener un boolean que me determine si se pudo concretar la funcion o no. Ejemplo: Un metodo que ingrese dinero en una cuenta. Tiene que retornar true si se pudo realizar esa operacion (true) o no (false)
+-----------------------------------------------------------------------------------------------

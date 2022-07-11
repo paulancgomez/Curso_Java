@@ -1,0 +1,55 @@
+//DECLARAR
+tipoDato [ ] [ ] identificador;
+nombreMatriz = new tipoDato [TamF] [TamC];
+double [ ] [ ] matriz = new double [5] [5];
+
+//INDICES
+Para acceder a un elemento de la matriz necesitamos dos índices:
+Uno para la posición de la fila y otro para la posición de la columna
+
+matriz [indiceF] [indiceC]
+
+indiceF indica la posición de la fila
+indiceC indica la posición de la Columna
+
+//RECORRIDO
+Por filas y Columnas
+
+public class RecorrerMatrizPorFilasYColumnas {
+         public static void main(String[] args) {
+	int[][] matriz = new int[50][100]; // Matriz de números enteros que supondremos llena.
+				 // 50 filas y 100 columnas.
+	
+	for (int i = 0; i < 50; i++)		// El primer índice recorre las filas.
+	        for (int j = 0; j < 100; j++){	// El segundo índice recorre las columnas.
+				// Procesamos cada elemento de la matriz.
+		System.out.println(matriz[i][j]);
+			}
+	}
+}
+
+
+Por columnas y filas
+
+public class RecorrerMatrizPorColumnasYFilas {
+    public static void main(String[] args) {
+            int[][] matriz = new int[50][100]; // Matriz de números enteros que supondremos llena.
+			             // 50 filas y 100 columnas.
+	
+           for (int i = 0; i < 100; i++)		// El primer índice recorre las columnas.
+	for (int j = 0; j < 50; j++){	// El segundo índice recorre las filas.
+				// Procesamos cada elemento de la matriz.
+	         System.out.println(matriz[j][i]);	// ¡Índices cambiados de orden!
+			}
+	}
+}
+
+//MUESTRA
+public static void muestra(int[][] matriz) {
+		for(int i=0; i<matriz.length; i++) {
+			for(int j=0; j<matriz[0].length; j++) {
+				System.out.print(matriz[i][j] + "\t");
+			}
+			System.out.println();
+		}
+	}

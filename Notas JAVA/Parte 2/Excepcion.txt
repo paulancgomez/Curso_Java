@@ -1,0 +1,20 @@
+//Podemos crear nuestros propios tipos de Excepciones
+Si ocurre un error aplico try catch
+-----------------------------------------------------------------------------------------------------------------------------
+//IMPORT
+
+import java.io.IOException;
+
+---------------------------------------------------------------------------------------------------------
+//TRY CATCH
+
+try{
+	//codigo que es propenso a fallar
+} catch(//tipo de excepción){
+	//código a ejecutarse si el try falla, como puede ser un mensaje de error.
+} catch(//otro tipo de excepción){
+	//código a ejecutarse si el try falla, ... mensaje de error.
+}
+..
+
+----------------------------------------------------------------------------------------------------------

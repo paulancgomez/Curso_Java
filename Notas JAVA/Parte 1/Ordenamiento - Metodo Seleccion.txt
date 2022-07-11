@@ -1,0 +1,18 @@
+//MÉTODO SELECCIÓN
+
+public static void Seleccion(int[]vector){
+        int i, j, k, p, auxiliar, limit = vector.length-1;
+        for(k = 0; k < limit; k++){
+            p = k;
+            for(i = k+1; i < = limit; i++){
+                if(vector[i] < vector[p]) p = i;
+                if(p != k){
+                    auxiliar = vector[p];
+                    vector [p] = vector[k];
+                    vector[k] = auxiliar;
+                }
+            }
+        }
+    }
+
+

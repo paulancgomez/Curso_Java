@@ -1,0 +1,83 @@
+//HERENCIA
+
+La sintaxis para declarar clases derivadas es:
+
+class ClaseDerivada extends ClaseBase{
+}
+
+--------------------------------------------------------------------------------------
+//EJEMPLO DE HERENCIA
+
+public class Persona{
+}
+
+public class Alumno extends Persona{
+}
+
+public class Empleado extends Persona{
+}
+
+public class Profesor extends Empleado{
+}
+
+public class Berdel extends Empleado{
+}
+
+--------------------------------------------------------------------------------------
+La clase derivada puede definir:
+-Un atributo con el mismo nombre que uno de la clase base.
+-Un metodo con la misma signatura que uno de la clase base.
+
+--------------------------------------------------------------------------------------
+//CONTRUCTOR
+-Cada clase va a tener su contructor
+-En el constructor de la clase derivada se realiza siempre una llamada al constructor de la clase base.
+
+//NO SE INDICA EXPLICITAMENTE: llama al constructor por defecto
+public Alumno(Strinf nombre, String apellido){
+	//aqui inserta Java una llamada (invisible) a super()
+	this.nombre = nombre;
+	this.apellido = apellido;
+}
+
+//INDICADO EXPLICITAMENTE
+public Alumno(Strinf nombre, String apellido, String grupo){
+	super(nombre, apellidos)
+	this.grupo = grupo;
+}
+
+--------------------------------------------------------------------------------------
+public class Persona{
+	
+	public Persona(String nombre){
+		this.setNombre(nombre);
+	}
+
+	public void setNombre(){
+		this.nombre = nombre;
+	}
+
+}
+
+
+
+public class Aluno extends Persona{
+	
+	public Alumnos(String nombre){
+		super(nombre);
+	}
+}
+
+--------------------------------------------------------------------------------------
+//SUPER
+public class Alumno extends Persona{
+	public void imprime(){		
+		super.imprime();
+		this.grupo = grupo;
+	}
+}
+
+-----------------------------------------------------------------------------------
+//MODIFICADOR DE ACCESO: PROTECTED
+
+protected: permite que el atributo sea visible en las clases derivadas o hijas. La visibilidad es para la misma clase y las clases derivadas.

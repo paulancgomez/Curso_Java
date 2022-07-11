@@ -1,0 +1,67 @@
+Este esquema de entradas y salidas basadas en un
+flujo permite que:
+● Las entradas sean independientes de la fuente de
+datos: ya que podemos capturar el dato en una archivo de texto (txt), excel o desde una base de datos.
+
+● Las salidas sean independiente del destino de los
+datos: podemos mostrar los datos en una aplicacion, pagina web o guardar en algun archivo.
+
+-------------------------------------------------------------------------------------------------
+FLUJO ESTANDAR
+
+En Java se accede a la E/S estándar a través de campos estáticos de la clase java.lang.System
+
+● System.in implementa la entrada estándar (SCANNER LO TIENE, FLUJO PARA ENTRADA)
+● System.out implementa la salida estándar (PRINTLN LO TIENE. FLUJO PARA SALIDA)
+● System.err implementa la salida de error (LO IMPRIME EN ROJO PARA DARNOS CUENTA QUE HUBO UN ERROR)
+
+------------------------------------------------------------------------------------------------
+OBJETO: System.in
+
+- ES UNA INSTANCIA DE LA CLASE: InputStream
+- FLUJO DE ENTRADA: Bytes (digitos que se ingresa)
+- METODOS:
+	read(): permite leer un byte de la entrada como entero.
+	skip(): ignora n bytes de la entrada (salta, omite).
+	available(): numero de bytes disponibles para leer en la entrada (cuantos bytes tiene un archivo para hacer la lectura, si es que hay un numero disponible para que lo leea read()).
+
+------------------------------------------------------------------------------------------------
+OBJETO: System.out
+
+- ES UNA INSTANCIA DE LA CLASE: PrintStream
+- FLUJO DE ENTRADA: Bytes (digitos que se ingresa)
+- METODOS:
+	print(): muestra caracteres por pantalla
+	println(): muestra caracteres por pantalla pero hace un salto de linea al final
+	flush(): vacia el buffer de salida escribiendo su contenido.
+
+-------------------------------------------------------------------------------------------------
+ByteArrayInputStream
+
+permite utilizar un búfer en la memoria como
+InputStream. La fuente de entrada es una matriz de bytes.
+
+-------------------------------------------------------------------------------------------------
+//FUNCION AVAILABLE
+
+flujoArray.available(): muestra la cantidad de datos que tiene disponible para la lectura.
+
+-Metodo available lo que hacemos es ver cual es la cantidad que tenemos disponible para
+seguir leyendo dentro de nuestro baffer.
+
+------------------------------------------------------------------------------------------------
+//IMPORT java.io.*;
+
+Para poder utilizar ByteArrayInputStream, 
+
+--------------------------------------------------------------------------------------------- 
+//CREAR ARRAY DE BYTES de 0 a 9
+
+byte [] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+---------------------------------------------------------------------------------
+//FUNCION read()
+
+byte [] array = {1, 2, 3, 4}
+ByteArrayInputStream flujoArray = ew ByteArrayInputStream(array); 
+flujoArray.read();

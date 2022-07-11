@@ -1,0 +1,5 @@
+Operadores Aritméticos. Son los operadores que nos permiten realizar operaciones matemáticas: suma (+), resta (-), multiplicación (*), división (/) y resto (%).
+
+Operadores Relaciones. Son aquellos que nos permiten comparar: igual a (==), distinto (!=), mayor que (>), mayor o igual (>=), menor (<) y menor que (<=).
+
+Operadores Lógicos. Son aquellas que evalúan expresiones booleanas: and (&&), or (||) y not (!).

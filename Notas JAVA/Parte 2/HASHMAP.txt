@@ -1,0 +1,155 @@
+HASHMAP
+
+Hashmap es una estructura de datos que sigue una idea muy parecida a la de vectores
+o ArrayList (indice/elemento) pero con la diferencia que Hashmap almacena dos ítems
+una Clave y un Valor y en este caso podemos acceder a cada valor por medio de la
+clave asociada.
+
+--------------------------------------------------------------------------------------------------------------
+HASHMAP - ¿COMO CREAR?
+
+public class Test {
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+HashMap<String,String> hm=new HashMap<String,String>();
+
+}
+}
+
+-------------------------------------------------------------------------------------------------------
+HASHMAP - AÑADIR UN ELEMENTO
+
+public class Test {
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+HashMap<String,String> hm=new HashMap<String,String>();
+hm.put("1", "Argentina");
+hm.put("3", "Chile");
+hm.put("2", "Bolivia");
+
+}
+}
+
+---------------------------------------------------------------------------------------------------
+HASHMAP-ACCESO A UN ELEMENTO
+
+public class Test {
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+HashMap<String,String> hm=new HashMap<String,String>();
+hm.put("1", "Argentina");
+hm.put("3", "Chile");
+hm.put("2", "Bolivia");
+System.out.println(hm.get("2"));
+}
+}
+
+-------------------------------------------------------------------------------------------------
+HASHMAP - ELIMINAR ELEMENTO
+
+public class Test {
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+HashMap<String,String> hm=new HashMap<String,String>();
+hm.put("1", "Argentina");
+hm.put("3", "Chile");
+hm.put("2", "Bolivia");
+System.out.println(hm.get("2"));
+hm.remove("3");
+}
+}
+
+---------------------------------------------------------------------------------
+HASHMAP - TAMAÑO
+
+public class Test {
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+HashMap<String,String> hm=new HashMap<String,String>();
+hm.put("1", "Argentina");
+hm.put("3", "Chile");
+hm.put("2", "Bolivia");
+System.out.println(hm.get("2"));
+hm.remove("3");
+System.out.println(hm.size());
+}
+}
+
+-----------------------------------------------------------------------------------
+HASHMAP - ACCESO A CLAVES
+
+public class Test {
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+HashMap<String,String> hm=new HashMap<String,String>();
+hm.put("1", "Argentina");
+hm.put("3", "Chile");
+hm.put("2", "Bolivia");
+System.out.println(hm.get("2"));
+hm.remove("3");
+System.out.println(hm.size());
+for (String i : hm.keySet()) {
+System.out.println(i);
+}
+}
+}
+
+-----------------------------------------------------------------------------------
+HASHMAP - ACCESO A VALORES
+
+public class Test {
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+HashMap<String,String> hm=new HashMap<String,String>();
+hm.put("1", "Argentina");
+hm.put("3", "Chile");
+hm.put("2", "Bolivia");
+System.out.println(hm.get("2"));
+hm.remove("3");
+System.out.println(hm.size());
+for (String i : hm.keySet()) {System.out.println(i);}
+for (String i : hm.values()) { System.out.println(i);}
+}
+}
+
+----------------------------------------------------------------------------------------
+HASHMAP - ACCESO A VALORES Y CLAVES
+
+public class Test {
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+HashMap<String,String> hm=new HashMap<String,String>();
+hm.put("1", "Argentina");
+hm.put("3", "Chile");
+hm.put("2", "Bolivia");
+for (String i : hm.keySet()) {
+System.out.println("Clave: " + i + " Valor: " + hm.get(i));
+}
+}
+}
+
+----------------------------------------------------------------------------------------
+HASHMAP - ELIMINAR TODOS
+
+public class Test {
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+HashMap<String,String> hm=new HashMap<String,String>();
+hm.put("1", "Argentina");
+hm.put("3", "Chile");
+hm.put("2", "Bolivia");
+hm.clear();
+
+}
+}
+
+--------------------------------------------------------------------------------------

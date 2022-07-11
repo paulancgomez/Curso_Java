@@ -1,0 +1,35 @@
+último en entrar, primero en salir.
+
+EJEMPLO: apilar platos en un punto.
+
+------------------------------------------------------------
+Las pilas se pueden implementar utilizando una estructura estática (arreglos), o una
+estructura dinámica (listas enlazadas, vectores, etc).
+
+-------------------------------------------------------------------
+Operaciones:
+
+● push(e): Inserta el elemento e al tope de la pila.
+● pop(): Elimina el elemento del tope de la pila y lo retorna. Si la pila está vacía se
+produce un error
+● top(): Retorna el elemento del tope de la pila. Si la pila está vacía se produce un error
+● isEmpty(): Retorna verdadero si la pila está vacía.
+● size(): Retorna la cantidad de elementos de la pila
+
+------------------------------------------------------------------------
+Implementación:
+
+● Se puede crear una pila de forma sencilla con la clase Stack que hereda de la clase
+Vector
+● Se define excepciones para las condiciones de error
+
+-----------------------------------------------------------------------
+EJEMPLO:
+
+Definimos una pila del tipo integer.
+Agregamos datos a la cola con push().
+
+iteramos hasta que la pila está vacía. isEmpty() nos muestra el
+elemento en la cola. Y con pop() sacamos el elemento de la pila.
+
+---------------------------------------------------------------------------

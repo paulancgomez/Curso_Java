@@ -1,0 +1,24 @@
+//RANDOM
+
+----------------------------------------------------------------------------------------
+//IMPORT
+
+import java.util.Random;
+
+---------------------------------------------------------------------------------------
+//DEFINICION
+
+Random random = new Random();
+int x = random.nextInt(100) + 1;           //0 y 99 + 1
+
+---------------------------------------------------------------------------------------
+//LISTA DE NUMEROS ENTEROS ALEATORIOS
+
+ArrayList<Integer> numeros = new ArrayList<Integer>();
+Random random = new Random();
+
+for(int i = 0; i < 4; i++) { 		
+	int x = random.nextInt(100) + 1; // 0 y 99 + 1		                  numeros.add(x);
+}	
+
+---------------------------------------------------------------------------------------

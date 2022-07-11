@@ -1,0 +1,79 @@
+//Crear y declarar una lista
+
+Hemos indicado que List es una interfaz y está implementada por clases como:
+● ArrayList
+● Stack
+● Vector
+● LinkedList.
+
+Por lo tanto, puede declarar y crear instancias de la lista de cualquiera de las siguientes
+maneras:
+
+● List linkedlist = new LinkedList();
+● List arraylist = new ArrayList();
+● List vec_list = new Vector();
+● List stck_list = new Stack();
+
+-------------------------------------------------------------------------------------
+Métodos:
+
+● add()
+● addAll()
+● clear()
+● contains()
+● containsAll()
+● copyOf()
+● equals()
+● get()
+● hashCode()
+● indexOf()
+● isEmpty()
+● iterator()
+● lastIndexOf()
+● listIterator()
+● of()
+● remove()
+● removeAll()
+● replaceAll()
+● retainAll()
+● set()
+● size()
+● sort()
+● spliterator()
+● subList()
+● toArray()
+
+---------------------------------------------------------------------
+EJEMPLO
+
+Definimos un ArrayList del tipo string.
+
+Agregamos datos a la lista con add().
+
+iterador es un objeto que nos permite recorrer una lista y
+presentar por pantalla todos sus elementos . Dispone de dos
+métodos clave para realizar esta operación hasNext() y next().
+
+--------------------------------------------------------------------------
+DIFERENCIAS LISTAS Y ARRAYS
+
+Arrays
+
+● estructura de datos para almacenar una
+secuencia de valores, NO redimensionable.
+● Series de variables consecutivas en memoria.
+● Se debe especificar su tamaño.
+● Se debe definir el tipo de datos que manejara.
+● Se maneja con índice.
+● No se puede agregar o eliminar elementos
+
+Listas
+
+● estructura de datos para almacenar una secuencia
+de valores, que ES redimensionable.
+● Se guardan en memoria de manera dinámica.
+● No es necesario definir el tamaño.
+● Puede almacenar distintos tipos de datos
+(no recomendado).
+● Se maneja con puntero.
+● Se puede agregar y eliminar elementos.

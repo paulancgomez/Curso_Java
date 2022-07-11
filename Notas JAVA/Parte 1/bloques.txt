@@ -1,0 +1,72 @@
+//
+
+-----------------------------------------------------------------------------------------
+//IF
+
+if(condicion){
+   sentencia1;
+   ...
+   sentenciak;
+}           
+else{
+   sentencia1;
+   ...
+   sentenciam;
+}
+
+--------------------------------------------------------------------------------------
+//FOR
+
+for (inicializacion;condicion;paso){
+sentencia1;
+...    	 					sentencian;
+}
+-----------------------------------------------------------------------------------------------
+//WHILE
+
+while (condicion){
+    sentencia1
+    ...
+   sentencian
+}
+
+----------------------------------------------------------------------------------------------
+//SWITCH
+
+int opcion=2;
+
+        switch (opcion){
+
+            case 1:{
+
+                System.out.println("Usted eligió la opcion 1.");
+
+                break;
+
+            }
+
+            case 2:{
+
+                System.out.println("Usted eligió la opcion 2.");
+
+                break;
+
+            }
+
+            case 3:{
+
+                System.out.println("Usted eligió la opcion 3.");
+
+                break;
+
+            }
+
+            default: {
+
+                System.out.println("Opcion incorrecta");
+
+            }
+
+      }//cierra SWITCH
+
+------------------------------------------------------------------------------------------------

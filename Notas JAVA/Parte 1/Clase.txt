@@ -1,0 +1,146 @@
+//CLASE
+
+public class Persona{
+}
+
+-----------------------------------------------------------------------------------
+//ATRIBUTOS
+
+public class Persona {
+
+    //Atributos
+    private String nombre;
+    private String apellidoPaterno;
+    private String apellidoMaterno;
+    private char sexo;
+    private int edad;
+    private String direccion;
+    
+}
+
+-Si no le pongo modificador lo considera public.
+-Los atributos son privados por el encapsulamiento.
+-------------------------------------------------------------------------------------
+//MODIFICADORES DE ACCESO
+
+public: el método o atributo es accesible por cualquiera.
+
+private: el método o atributo sólo es accesible para la propia clase. Fuera de la clase, no se ven. Se suelen usar en atributos y métodos que solo se usen dentro de la clase.
+
+protected: el método o atributo de una clase padre se podrá acceder desde las clases hijas de la misma, es muy usado en herencia.
+-------------------------------------------------------------------------------------
+//CONSTRUCTOR
+
+Una clase puede tener mas de un constructor.
+El constructor es public porque lo tengo que usar fuera de la clase
+
+//CONSTRUCTOR POR DEFECTO: no recibe parametros
+    public Persona(){
+            
+    }
+
+//CONSTRUCTOR DE COPIA
+    public Persona(Persona persona){
+            this.nombre = persona.nombre;
+            this.apellidoPaterno = persona.apellidoPaterno;
+            this.apellidoMaterno = persona.apellidoMaterno;
+            this.sexo = persona.sexo;
+            this.edad = persona.edad;
+            this.direccion = persona.direccion;
+    }
+    
+//CONSTRUCTOR COMUN
+    public Persona(String nombre, String apellidoPaterno, String apellidoMaterno, char sexo, int edad, String direccion){
+            this.nombre = nom;
+            this.apellidoPaterno = apellidoPaterno;
+            this.apellidoMaterno = apellidoMaterno;
+            this.sexo = sexo;
+            this.edad = edad;
+            this.direccion = direccion;
+    }
+
+//Los parametros pueden llamarse igual que los atributos (recomendable) y distintos.
+
+public Persona(String nombre, String apellido, int edad){
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.edad = edad;
+}
+
+//Cuando no se inicializa un atributo se le asigna por defecto NULL
+-------------------------------------------------------------------------------------
+//INSTANCIAR
+
+NombreClase nombreObjeto = new NombreConstructor(parametros);
+
+Persona persona1 = new Persona("perez", "jose", 25);
+
+public static void main(String[] args) {
+		Persona persona1=new Persona("José Roberto", "Jiménez", "Hernández", 'H', 20, "Av. Belgrano #41");
+-------------------------------------------------------------------------------------
+//MUESTRA DENTRO DE LA CLASE
+Ya no va el static
+
+//FORMA 1
+
+public void muestra() {
+		System.out.println("Nombre: " + this.nombre + "\nApellido: " + this.apellido + "\nDni: " + this.dni);
+	}
+
+//FORMA 2
+
+public String mostrarDatos(Persona persona){
+            String datos="Los datos son: \n";
+            datos+=persona.nombre+"\n";
+            datos+=persona.apellidoPaterno+"\n";
+            datos+=persona.apellidoMaterno+"\n";
+            datos+=persona.sexo+"\n";
+            datos+=persona.edad+"\n";
+            datos+=persona.direccion+"\n";
+            return datos;
+    }
+
+-------------------------------------------------------------------------------------
+//MUESTRA LLAMANDO OTRO METODO QUE MUESTRA
+
+public void muestra() {
+	System.out.println("Apellido: " + this.obtenerNombreCompleto());
+	System.out.println("Dni: " + this.dni);
+	System.out.println("Domicilio: " + this.domicilio);
+}
+	
+private String obtenerNombreCompleto(){
+	return this.apellido + ", " + this.nombre;
+}
+
+-------------------------------------------------------------------------------------
+//DESDE EL TEST
+------------------------------------------------------------------------------------
+//ENCAPSULAMIENTO: SET Y GET
+
+public class Persona {
+
+    //Atributos
+    private String nombre;
+    private String apellidoPaterno;
+    private String apellidoMaterno;
+    private char sexo;
+    private int edad;
+    private String direccion;
+    
+    //CONSTRUCTOR POR DEFECTO
+    public Persona(){
+            
+    }
+    public String getNombre() {
+    	return this.nombre;
+    }
+ 
+    public char getSexo() {
+    	return this.sexo;
+    }
+    public int getEdad() {
+    	return this.edad;
+    }
+------------------------------------------------------------------------------------------
+profe cuando importa la libreria math, eso lo hace en la clase raices?

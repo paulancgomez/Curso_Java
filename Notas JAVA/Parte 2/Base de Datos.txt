@@ -1,0 +1,61 @@
+BASE DE DATOS
+
+-----------------------------------------------------------------------------------------------
+USAR LA BASE DE DATOS
+
+use universidad;
+----------------------------------------------------------------------------------------------------
+BORRAR BASE DE DATOS
+
+drop database universidad
+---------------------------------------------------------------------------------------------------
+MOSTRAR LAS TABLAS
+
+show tables;
+---------------------------------------------------------------------------------------------------
+MOSTRAR LAS COLUMNAS DE UNA TABLA
+
+show columns from persona;
+-------------------------------------------------------------------------------------------------
+AÑADIR UNA TABLA: Añado una columna barrio (de tamaño 50) a la tabla persona
+
+ALTER TABLE persona ADD barrio VARCHAR(50); 
+-------------------------------------------------------------------------------------------------
+MOSTRAR LOS DATOS DE LA TABLA persona
+
+select * from persona;
+----------------------------------------------------------------------------------------------------
+AGREGAR UN REGISTRO
+
+INSERT INTO persona(nif, nombre, apellido1, ciudad, direccion, telefono, fecha_nacimiento, sexo, tipo) VALUES('64656557M', 'Mario', 'Liendro', '    ', 'Diario del Norte 4223', '387555566', '1994-08-01', 'H', 'profesor');
+---------------------------------------------------------------------------------------------------
+
+MODIFICAR UNA COLUMNA 'nombre' YA CREADA EN TABLA 'persona'
+
+ALTER TABLE persona MODIFY COLUMNS nombre VARCHAR(225) NOT NULL;
+
+---------------------------------------------------------------------------------------------------------
+//INSERTAR UN REGISTRO
+
+INSERT INTO persona(nombre,apellido,edad) VALUES ('China', 'Suarez', '30');
+
+//INSERTAR DOS REGISTROS EN UNA SOLA LINEA
+
+INSERT INTO persona(nombre,apellido,edad) VALUES ('Dua', 'Lipa', '25'), ('Harry', 'Styles', '27');
+
+-------------------------------------------------------------------------------------------------------------
+//MOSTRAR SOLO UNA COLUMNA 'edad' DE LA TABLA
+
+SELECT * FROM persona WHERE persona.edad;
+
+------------------------------------------------------------------------------------------------------------
+//MOSTRAR SOLO UNA COLUMNA 'edad' DE LA TABLA AQUELLOS QUE TENGAN MAS DE 20
+
+SELECT * FROM persona WHERE persona.edad > 20;
+
+------------------------------------------------------------------------------------------------------------
+//MOSTRAR SOLO LOS CAMPOS 'nombre' Y 'apellido' DE LA COLUMNA 'edad' DE LA TABLA SOLO AQUELLOS QUE TENGAN MAS DE 20
+
+SELECT nombre, apellido FROM persona WHERE persona.edad > 20;
+
+-------------------------------------------------------------------------------------------------------------

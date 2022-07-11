@@ -1,0 +1,43 @@
+//SCANNER
+
+-----------------------------------------------------------------------------------------
+//DEFINICION
+
+import java.util.Scanner;
+
+Scanner teclado = new Scanner(System.in);
+int num2 = teclado.nextInt();
+teclado.close();
+
+-----------------------------------------------------------------------------------------
+//TIPOS
+
+int variable1 = teclado.nextInt();
+float variable2 = teclado.nextFloat();
+String variable3 = teclado.nextLine();
+double variable4 = teclado.nextDouble();
+----------------------------------------------------------------------------------------
+//OPCION 1
+
+import java.util.Scanner;
+
+private static Scanner teclado;
+
+int variable1 = teclado.nextInt();
+float variable2 = teclado.nextFloat();
+String variable3 = teclado.nextLine();
+
+teclado.close();
+
+-----------------------------------------------------------------------------------------
+//OPCION 2
+
+import java.util.Scanner;
+
+Scanner teclado = new Scanner(System.in);
+
+int variable1 = teclado.nextInt();
+float variable2 = teclado.nextFloat();
+String variable3 = teclado.nextLine();
+
+teclado.close();

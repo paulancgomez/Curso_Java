@@ -1,0 +1,5 @@
+//POLIMORFISMO
+
+Es la capacidad que tienen dos o más objetos de diferentes clases de responder en forma adecuada al mismo mensaje, es decir,  a su manera.
+
+----------------------------------------------------------------------------------------------------
